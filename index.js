@@ -21,7 +21,7 @@ exports.decorateTerm = (Term, { React, notify }) => {
                  React.createElement("img", {style: styles.img, src: "/Users/coju/.hyper_plugins/local/mirei/img/puch-mirei.png"}),
                  React.createElement(Term, this.props),
             ];
-            return React.createElement("div", null, children);
+            return React.createElement("div", {style: { width: '100%', height: '100%', position: 'relative' }}, children);
         }
     }
 }
